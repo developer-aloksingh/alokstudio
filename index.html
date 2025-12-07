@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Digital Transformation Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased scroll-smooth bg-gradient-to-br from-slate-50 to-blue-50 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 glass-effect transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-rocket text-white text-sm"></i>
+                    </div>
+                    <span class="text-2xl font-bold gradient-text">TechNova</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">About</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Portfolio</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="#contact" class="hidden md:inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                    Get Quote <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white/90 backdrop-blur-md border-t px-4 py-6 space-y-4">
+            <a href="#home" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Home</a>
+            <a href="#services" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Services</a>
+            <a href="#about" class="block text-gray-700 hover:text-blue-600 font-medium py-2">About</a>
+            <a href="#portfolio" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Portfolio</a>
+            <a href="#contact" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Contact</a>
+            <a href="#contact" class="block w-full text-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl mt-4">Get Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="animate-slide-up">
+                <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">🚀 Digital Excellence Since 2015</span>
+                <h1 class="text-5xl md:text-7xl font-bold text-gray-900 leading-tight mb-6">
+                    Transform Your 
+                    <span class="gradient-text block">Business with</span>
+                    Cutting-Edge Solutions
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-lg leading-relaxed">
+                    We craft innovative digital experiences that drive growth. From custom software to cloud solutions, 
+                    we partner with ambitious companies to build the future.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg">
+                        Explore Services <i class="fas fa-arrow-right ml-3"></i>
+                    </a>
+                    <a href="#portfolio" class="inline-flex items-center px-8 py-4 border-2 border-gray-200 text-gray-700 font-semibold rounded-2xl hover:bg-gray-50 hover:shadow-lg transition-all duration-300">
+                        View Portfolio <i class="fas fa-external-link-alt ml-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative animate-fade-in">
+                <div class="w-full h-96 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl backdrop-blur-xl border border-white/30 flex items-center justify-center p-8">
+                    <div class="text-center">
+                        <div class="w-48 h-48 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl">
+                            <i class="fas fa-laptop-code text-5xl text-white"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full w-24 mx-auto animate-pulse"></div>
+                            <p class="text-white/80 text-sm font-medium">Digital Innovation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-24 bg-white/50 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="animate-slide-up animation-delay-200">
+                    <div class="text-4xl font-bold gradient-text mb-2">500+</div>
+                    <div class="text-gray-600 font-medium">Projects Delivered</div>
+                </div>
+                <div class="animate-slide-up animation-delay-400">
+                    <div class="text-4xl font-bold gradient-text mb-2">98%</div>
+                    <div class="text-gray-600 font-medium">Client Satisfaction</div>
+                </div>
+                <div class="animate-slide-up animation-delay-600">
+                    <div class="text-4xl font-bold gradient-text mb-2">50+</div>
+                    <div class="text-gray-600 font-medium">Expert Team Members</div>
+                </div>
+                <div class="animate-slide-up animation-delay-800">
+                    <div class="text-4xl font-bold gradient-text mb-2">5+</div>
+                    <div class="text-gray-600 font-medium">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 animate-slide-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Core Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive digital solutions tailored to accelerate your business growth and digital transformation.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-white/70 backdrop-blur-sm rounded-3xl p-10 border border-white/50 hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 hover:bg-white">
+                    <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-code text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Custom Software Development</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Scalable web and mobile applications built with modern technologies and best practices.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Full-stack development</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cloud-native architecture</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Agile methodology</li>
+                    </ul>
+                </div>
+
+                <div class="group bg-white/70 backdrop-blur-sm rounded-3xl p-10 border border-white/50 hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 hover:bg-white">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-cloud text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">Cloud Solutions</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Secure, scalable cloud infrastructure and migration services for modern businesses.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>AWS, Azure, Google Cloud</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>DevOps automation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cost optimization</li>
+                    </ul>
+                </div>
+
+                <div class="group bg-white/70 backdrop-blur-sm rounded-3xl p-10 border border-white/50 hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 hover:bg-white md:col-span-2 lg:col-span-1">
+                    <div class="w-20 h-20 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-mobile-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-emerald-600 transition-colors">Mobile App Development</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Native and cross-platform mobile applications with exceptional user experience.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>iOS & Android native</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>React Native & Flutter</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Progressive Web Apps</li>
+                    </ul>
+                </div>
+
+                <div class="group bg-white/70 backdrop-blur-sm rounded-3xl p-10 border border-white/50 hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 hover:bg-white md:col-span-2">
+                    <div class="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors">Digital Marketing & AI</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Data-driven marketing strategies powered by AI and machine learning insights.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>SEO & SEM optimization</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>AI-powered analytics</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Social media automation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gradient-to-b from-white/70 to-blue-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-up">
+                    <span class="inline-block px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 rounded-full text-sm font-semibold mb-8">About TechNova</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Your Trusted Digital Partner</h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        With over 5 years of excellence, we've helped 500+ businesses transform through innovative technology solutions.
+                        Our team combines creativity, technical expertise, and business acumen to deliver measurable results.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div>
+                            <div class="flex items-start space-x-4 mb-6">
+                                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-award text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-xl text-gray-900 mb-2">Award Winning</h4>
+                                    <p class="text-gray-600">Recognized for excellence in digital innovation.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-users text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-xl text-gray-900 mb-2">Expert Team</h4>
+                                    <p class="text-gray-600">50+ certified professionals across all disciplines.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-start space-x-4 mb-6">
+                                <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-shield-alt text-emerald-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-xl text-gray-900 mb-2">Secure & Reliable</h4>
+                                    <p class="text-gray-600">Enterprise-grade security and 99.9% uptime.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-clock text-orange-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-xl text-gray-900 mb-2">Fast Delivery</h4>
+                                    <p class="text-gray-600">Projects delivered 20% faster than industry average.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative animate-slide-up animation-delay-300">
+                    <div class="bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-xl rounded-3xl p-12 border border-white/30">
+                        <div class="grid grid-cols-2 gap-6 mb-8">
+                            <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/30">
+                                <div class="text-3xl font-bold gradient-text mb-2">24/7</div>
+                                <div class="text-gray-700 font-medium">Support</div>
+                            </div>
+                            <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/30">
+                                <div class="text-3xl font-bold gradient-text mb-2">100%</div>
+                                <div class="text-gray-700 font-medium">Transparent</div>
+                            </div>
+                            <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/30">
+                                <div class="text-3xl font-bold gradient-text mb-2">SLA</div>
+                                <div class="text-gray-700 font-medium">Guaranteed</div>
+                            </div>
+                            <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/30">
+                                <div class="text-3xl font-bold gradient-text mb-2">ROI</div>
+                                <div class="text-gray-700 font-medium">Focused</div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-handshake text-6xl text-blue-500/80 mb-4"></i>
+                            <p class="text-2xl font-bold text-gray-900 mb-2">Trusted by Global Brands</p>
+                            <p class="text-gray-600">Join 500+ satisfied customers worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 animate-slide-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Featured Projects</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Real-world success stories showcasing our expertise across diverse industries.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-blue-50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    <div class="relative h-64 bg-gradient-to-br from-blue-500 to-purple-600 flex items-end p-8">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                        <div class="relative z-10 text-white">
+                            <h3 class="text-2xl font-bold mb-2">FinTech Platform</h3>
+                            <p class="opacity-90 mb-4">Digital banking solution for 2M+ users</p>
+                            <div class="flex space-x-4 text-sm opacity-80">
+                                <span>React Native</span>
+                                <span>Node.js</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <h4 class="font-semibold text-xl text-gray-900 group-hover:text-blue-600">SmartBank Pro</h4>
+                                <p class="text-gray-600 text-sm">Complete digital banking experience</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-emerald-600">$5.2M</div>
+                                <div class="text-xs text-gray-500 uppercase tracking-wide">Revenue Growth</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold text-sm flex items-center">
+                                View Case Study <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                            <div class="flex space-x-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat similar structure for 2 more portfolio items -->
+                <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-blue-50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    <div class="relative h-64 bg-gradient-to-br from-emerald-500 to-teal-600 flex items-end p-8">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                        <div class="relative z-10 text-white">
+                            <h3 class="text-2xl font-bold mb-2">E-Learning Platform</h3>
+                            <p class="opacity-90 mb-4">Education platform for 500K students</p>
+                            <div class="flex space-x-4 text-sm opacity-80">
+                                <span>Next.js</span>
+                                <span>Firebase</span>
+                                <span>AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <h4 class="font-semibold text-xl text-gray-900 group-hover:text-emerald-600">EduNova Academy</h4>
+                                <p class="text-gray-600 text-sm">Interactive learning management system</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-emerald-600">300%</div>
+                                <div class="text-xs text-gray-500 uppercase tracking-wide">User Growth</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-emerald-600 hover:text-emerald-700 font-semibold text-sm flex items-center">
+                                View Case Study <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                            <div class="flex space-x-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-blue-50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 lg:col-span-2">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    <div class="relative h-64 bg-gradient-to-br from-purple-500 to-pink-600 flex items-end p-8">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                        <div class="relative z-10 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Enterprise ERP</h3>
+                            <p class="opacity-90 mb-4">Complete business management suite</p>
+                            <div class="flex space-x-4 text-sm opacity-80">
+                                <span>.NET Core</span>
+                                <span>SQL Server</span>
+                                <span>Azure</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <h4 class="font-semibold text-xl text-gray-900 group-hover:text-purple-600">BizFlow Enterprise</h4>
+                                <p class="text-gray-600 text-sm">Integrated ERP for manufacturing sector</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-emerald-600">45%</div>
+                                <div class="text-xs text-gray-500 uppercase tracking-wide">Cost Reduction</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-purple-600 hover:text-purple-700 font-semibold text-sm flex items-center">
+                                View Case Study <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                            <div class="flex space-x-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-br from-blue-600 to-purple-600">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <div class="animate-slide-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
+                <p class="text-xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
+                    Join 500+ successful companies who trusted us for their digital transformation journey.
+                    Let's create something amazing together.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <a href="#contact" class="inline-flex items-center px-10 py-5 bg-white text-blue-600 font-bold text-xl rounded-3xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                        Start Your Project <i class="fas fa-rocket ml-3"></i>
+                    </a>
+                    <div class="flex items-center space-x-8 text-blue-100">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-2xl"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-2xl"></i>
+                            <span>hello@technova.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-20 animate-slide-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Ready to discuss your project? Send us a message and we'll respond within 24 hours.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <div class="space-y-8 animate-slide-up">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-colors">
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Visit our office</h4>
+                                    <p class="text-gray-600">123 Tech Street, Silicon Valley<br>CA 94043, USA</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-colors">
+                                <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-emerald-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Call us directly</h4>
+                                    <p class="text-gray-600">+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-colors">
+                                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Send us an email</h4>
+                                    <p class="text-gray-600">hello@technova.com<br>support@technova.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="#" class="group flex items-center justify-center p-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300">
+                            <i class="fab fa-linkedin-in text-xl group-hover:-translate-x-1 transition-transform mr-3"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="group flex items-center justify-center p-4 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300">
+                            <i class="fab fa-twitter text-xl group-hover:-translate-x-1 transition-transform mr-3"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="group flex items-center justify-center p-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300">
+                            <i class="fab fa-github text-xl group-hover:-translate-x-1 transition-transform mr-3"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="group flex items-center justify-center p-4 bg-gradient-to-r from-pink-600 to-rose-600 text-white rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300">
+                            <i class="fab fa-dribbble text-xl group-hover:-translate-x-1 transition-transform mr-3"></i>
+                            <span>Dribbble</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="animate-slide-up animation-delay-200">
+                    <form class="space-y-6 bg-gray-50/50 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/60 backdrop-blur-sm" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/60 backdrop-blur-sm" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Company</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/60 backdrop-blur-sm" placeholder="Your company name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                            <textarea rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-vertical bg-white/60 backdrop-blur-sm" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-2xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center">
+                        <i class="fas fa-rocket text-white text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-bold">TechNova</span>
+                </div>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    Transforming businesses through innovative digital solutions. Your success is our mission.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-12 h-12 bg-gray-800/50 hover:bg-blue-600 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-gray-800/50 hover:bg-blue-500 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-gray-800/50 hover:bg-gray-400 rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Services</h4>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition-colors">Custom Software</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Cloud Solutions</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Mobile Apps</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Digital Marketing</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">AI & Analytics</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Company</h4>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Newsletter</h4>
+                <p class="text-gray-400 mb-6">Get the latest updates on technology and business growth.</p>
+                <div class="flex bg-gray-800/50 rounded-2xl p-3">
+                    <input type="email" placeholder="your@email.com" class="bg-transparent border-none outline-none flex-1 text-white placeholder-gray-400 px-3">
+                    <button class="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 whitespace-nowrap">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-12 pt-12 text-center text-gray-400">
+            <p>&copy; 2025 TechNova Solutions. All rights reserved. Made with ❤️ for digital excellence.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.backdropFilter = 'blur(20px)';
+            } else {
+                nav.classList.add('glass-effect');
+                nav.classList.remove('bg-white/95');
+            }
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you! Your message has been sent. We\'ll get back to you within 24 hours.');
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-slide-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s ease-out';
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
